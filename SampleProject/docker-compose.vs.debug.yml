@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  sampleproject.admin:
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  "bin/Debug/net5.0/SampleProject.Admin.dll" /seed'
+
+  sampleproject.admin.api:
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+  sampleproject.sts.identity:
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro

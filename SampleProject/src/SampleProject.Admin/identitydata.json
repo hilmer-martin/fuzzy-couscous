@@ -1,0 +1,25 @@
+﻿{
+  "IdentityData": {
+    "Roles": [
+      {
+        "Name": "Admin"
+      }
+    ],
+    "Users": [
+      {
+        "Username": "admin",
+        "Password": "Pass123$",
+        "Email": "martin@hilmer-bit.de",
+        "Roles": [
+          "Admin"
+        ],
+        "Claims": [
+          {
+            "Type": "name",
+            "Value": "admin"
+          }
+        ]
+      }
+    ]
+  }
+}
